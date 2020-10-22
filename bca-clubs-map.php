@@ -24,10 +24,6 @@ function display_clubs_map($atts) {
      the leaflet overheads, the leaflet code we've written, and returns a
      single div */
 
-  // Fetch leaflet
-  wp_enqueue_style('leaflet_style', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
-  wp_enqueue_script('leaflet_script', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js');
-
   // Start buffering output
   ob_start();
   echo '<div id="mapid" style="height: 300px;"></div>';
@@ -35,6 +31,12 @@ function display_clubs_map($atts) {
   $raw_data_url = 'https://gitcdn.xyz/repo/BritishCavingAssociation/bca-clubs-map/master/caving_clubs.csv';
 
   ?>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
   <script>
     var mymap = L.map('mapid').setView([51.505, -0.09], 13);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
