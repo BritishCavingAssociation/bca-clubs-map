@@ -17,18 +17,6 @@ if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
     require __DIR__ . '/vendor/autoload.php';
 }
 
-function logf( $log ) {
-  /* A simple logger that doesn't depend on external error/log handlers */
-	file_put_contents(__DIR__ . '/log_'.date("j.n.Y").'.log', date("H:i:s").$log."\r\n", FILE_APPEND);
-}
-
-// Register leaflet without fetching it until needed
-function register_leaflet() {
-  wp_register_style('leaflet_style', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
-  wp_register_script('leaflet_script', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js');
-}
-add_action('wp_enqueue_scripts', 'register_leaflet');
-
 // Shortcodes
 
 function display_clubs_map($atts) {
@@ -37,8 +25,8 @@ function display_clubs_map($atts) {
      single div */
 
   // Fetch leaflet
-  wp_enqueue_style('leaflet_style');
-  wp_enqueue_script('leaflet_script');
+  wp_enqueue_style('leaflet_style', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+  wp_enqueue_script('leaflet_script', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js');
 
   // Start buffering output
   ob_start();
