@@ -77,7 +77,7 @@ function display_clubs_map() {
         iconSize: [32, 32],
         iconAnchor: [16, 16],
         popupAnchor: [0, -16],
-        iconUrl: './images/' + icon + '.png'
+        iconUrl:  '<?php echo plugins_url('/images/',__FILE__); ?>' + icon + '.png'
       });
     };
 
