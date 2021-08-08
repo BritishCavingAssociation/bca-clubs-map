@@ -24,16 +24,8 @@ function display_clubs_map() {
   ob_start();
   echo '<div id="mapid" style="height: 50rem;"></div>';
 
-  // Fetch clubs data from gitcdn
-  $clubs_data_url = 'https://gitcdn.xyz/repo/BritishCavingAssociation/bca-clubs-map/master/caving_clubs.csv';
-  $clubs_data_str = file_get_contents($clubs_data_url);
-  if ($clubs_data_str !== False) {
-    $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
-  } else {
-    $clubs_data = [];
-    logf('Failed to fetch clubs data');
-    echo 'Sorry, this content isn\'t working at the moment.';
-  }
+  // Fetch clubs data
+  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv',__FILE__));
 
   ?>
 
