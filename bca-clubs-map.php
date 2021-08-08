@@ -26,6 +26,7 @@ function display_clubs_map() {
 
   // Fetch clubs data
   $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv',__FILE__));
+  $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
 
   ?>
 
