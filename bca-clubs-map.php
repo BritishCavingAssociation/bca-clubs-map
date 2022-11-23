@@ -137,7 +137,7 @@ function display_clubs_list() {
     <ul>
 EOD;
     foreach ($clubs_data as $club) {
-      $init = sub_str($club[0],0,1);
+      $init = substr($club[0],0,1);
       if ($init == '#' || $init < $a) {
         continue;
       } else if ($init > $a) {
