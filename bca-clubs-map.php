@@ -156,6 +156,8 @@ EOD;
 EOD;
   }
 
+  echo '</ul>'; 
+
   // End buffering output and return
   $output = ob_get_contents();
   ob_end_clean();
