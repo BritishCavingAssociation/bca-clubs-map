@@ -13,12 +13,10 @@ defined( 'ABSPATH' ) or die();
 
 $v = False;
 
-// Shortcodes
-
+/**
+ * Display a leaflet map of the caving clubs (where possible)
+ */
 function display_clubs_map() {
-  /* This is the function called when the shortcode is used; it just registers
-     the leaflet overheads, the leaflet code we've written, and returns a
-     single div */
 
   // Start buffering output
   ob_start();
@@ -115,5 +113,56 @@ function display_clubs_map() {
   return $output;
 }
 add_shortcode('clubs_map', 'display_clubs_map');
+
+/**
+ * Display bulleted list of clubs
+ */
+function display_clubs_list() {
+
+  // Fetch clubs data
+  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv',__FILE__));
+  $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
+
+  // Start buffering output
+  ob_start();
+  echo '<ul class="clubsList">';
+
+  $alphabet = str_split('abcdefghijklmnopqrstuvwxyz');
+
+  foreach ($alphabet as $a) {
+    echo <<<EOD
+<li>
+    ::marker
+    <strong>{$a}</strong>
+    <ul>
+EOD;
+    foreach ($clubs_data as $club) {
+      $init = sub_str($club[0],0,1);
+      if ($init == '#' || $init < $a) {
+        continue;
+      } else if ($init > $a) {
+        break;
+      } else if ($init == $a) {
+        $club_el = ($club[1] ? "<a href='{$club[1]}'>{$club[0]}</a>" : $club[0]);
+        echo <<<EOD
+  <li>
+    ::marker
+    {$club_el}
+  </li>
+  EOD;
+      }
+    }
+    echo <<<'EOD'
+    <ul>
+</li>
+EOD;
+  }
+
+  // End buffering output and return
+  $output = ob_get_contents();
+  ob_end_clean();
+  return $output;
+}
+add_shortcode('clubs_list', 'display_clubs_list');
 
 ?>
