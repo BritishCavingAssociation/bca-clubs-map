@@ -1,10 +1,11 @@
 Name,URL,Lat,Lon,Type
 Aberystwyth Caving Club,https://www.abercavers.co.uk/,52.41566,-4.06649,Club
-AditNow Mining History Society,https://www.aditnow.co.uk/,,,
+#AditNow Mining History Society,https://www.aditnow.co.uk/,,,
 Antares Caving Club,,,,
-Avon Scouts Caving Team,https://www.avonscouts.org.uk/activity-adventure/land/caving/,51.56336,-2.55985,Scouts
+Avon Scouts Caving Team*,https://www.avonscouts.org.uk/activity-adventure/land/caving/,51.56336,-2.55985,Scouts
 Axbridge Caving Group,http://axbridgecavinggroup.wikidot.com/,51.24746,-2.64612,Meet
-Birmingham Students Caving Club,https://www.facebook.com/Birmingham-Students-Caving-Club-110462737156136/,52.44908,-1.9279,Club
+#Birmingham Students Caving Club,https://www.facebook.com/Birmingham-Students-Caving-Club-110462737156136/,52.44908,-1.9279,Club
+Bangor Students Caving Club,https://www.facebook.com/groups/489286762025535/,53.22952,-4.13217,Club
 Black Rose Caving Club,http://www.brcc.org.uk/,,,
 Borwick Hall Caving Club,https://www.lancashire.gov.uk/outdooreducation/our-centres/borwick-hall/,54.14935,-2.73294,Centre
 Bracknell & District Caving Club,http://www.bdcc.co.uk/,51.43954,-0.7853,Meet
@@ -19,16 +20,18 @@ Buttered Badger Potholing Club,http://www.butteredbadger.com/,,,
 Cadley Hill Caving Club,,,,
 Cambridge Caving and Climbing Club,http://thecccc.org.uk/,52.20492,0.13009,Meet
 Cambridge University Caving Club,https://caving.soc.srcf.net/,52.20522,0.12868,Meet
-Carbis Bay Crew,http://www.carbisbaycrew.co.uk/,50.19659,-5.46505,Area
+#Carbis Bay Crew,http://www.carbisbaycrew.co.uk/,50.19659,-5.46505,Area
+Cardiff Hill Divers,https://www.facebook.com/groups/CardiffHillDivers/,51.50224,-3.20505,Area
 Cardiff University Caving & Canyoning Club,https://www.cardiffstudents.com/activities/sport/caving/,51.48841,-3.17746,Meet
-Cave and Crag Club,http://www.caveandcrag.co.uk/,52.48931,-1.89675,Meet
+Cave and Crag Club*,http://www.caveandcrag.co.uk/,52.48931,-1.89675,Meet
+CavefestUK,https://www.cavefestuk.co.uk,,,
 Cerberus Spelaeological Society,http://www.cerberusspeleo.org.uk/,51.22292,-2.50185,Hut
 Cheddar Caving Club,https://cheddar-caving-club.org.uk/,51.28129,-2.77204,Meet
 Chelsea Spelaeological Society,http://www.chelseaspelaeo.org/,51.83444,-3.15556,Hut
 Chesterfield Caving Club,https://chesterfieldcavingclub.co.uk/,53.23446,-1.3612,Meet
 Cleveland Mining Heritage Society,http://cmhs.org.uk/,54.43548,-0.72498,Meet
-CNCC Technical Group,https://cncc.org.uk/fixed-aids/technical-group.php,,,
-Combined Services Caving Club,https://militarycaving.weebly.com/,,,
+#CNCC Technical Group,https://cncc.org.uk/fixed-aids/technical-group.php,,,
+Combined Services Caving Club*,https://militarycaving.weebly.com/,,,
 Condurrow Mine Group,,50.20675,-5.27982,Area
 Cornwall Mine Explorers Club,,50.4,-4.9,Area
 Craven Pothole Club,https://www.cravenpotholeclub.org/,54.14926,-2.29589,Hut
@@ -37,7 +40,7 @@ Croydon Caving Club,http://croydoncavingclub.org.uk/,51.80291,-3.56012,Hut
 Cumbria Amentity Trust Mining History Society,http://www.catmhs.org.uk/,54.5,-3.25,Area
 Cwmbran Caving Club,https://www.facebook.com/ogofccc/,51.69105,-3.01057,Meet
 Darkside Caving & Mining Club,https://www.peakinstruction.com/blog/darkside-caving-mining-club,,,
-Derby Underground Darkspace Exploration Society,,52.916667,-1.466667,Area
+#Derby Underground Darkspace Exploration Society,,52.916667,-1.466667,Area
 Derbyshire Caving Club,https://www.derbyscc.org.uk/,53.3052,-2.2286,Meet
 Derbyshire Pennine Club,http://www.thedpc.co.uk/,53.27554,-1.65468,Hut
 Derbyshire Scout Caving Team,https://www.derbyshirescouts.org/activities/caving,52.97198,-1.45698,Scouts
@@ -51,43 +54,47 @@ Earby Pothole Club,http://earbypotholeclub.co.uk/,54.11759,-2.39133,Meet
 Education in the Environment Caving Club,,,,
 Eldon Pothole Club,http://www.eldonpotholeclub.org.uk/,53.28275,-1.76108,Meet
 Elysium Underground Group,,,,
-Exeter University Speleological Society,https://exeterspeleology.wordpress.com/,50.73542,-3.5345,Club
+Exeter University Speleological Society,https://exetercaving.co.uk/,50.73542,-3.5345,Club
 Frome Caving Group,http://fromecavinggroup.co.uk/,51.24746,-2.64612,Meet
 Gagendor Caving Club,https://www.facebook.com/gagendor/,,,
-Gibraltar Museum Caving Unit,https://www.gibmuseum.gi/our-work/caving-unit,,,
-Glasgow University Potholing Association,https://www.gla.ac.uk/myglasgow/sport/whatson/club/potholing/,55.85164,-4.28127,Meet
+Gibraltar Museum Caving Unit*,https://www.gibmuseum.gi/our-work/caving-unit,,,
+#Glasgow University Potholing Association,https://www.gla.ac.uk/myglasgow/sport/whatson/club/potholing/,55.85164,-4.28127,Meet
 Gloucester Speleological Society,https://www.gloucester-speleo.org/,51.86444,-2.24444,Area
 Gloucestershire Bat Group Underground Section,https://glosbats.org.uk/,51.77366,-2.29092,Meet
 Good Luck Mine Preservation Club,http://www.goodluckmine.org.uk/,53.10502,-1.59966,Meet
-Gosport Speleological Club,,50.79478,-1.12432,Area
+#Gosport Speleological Club,,50.79478,-1.12432,Area
 Grampian Speleological Group,http://www.gsg.org.uk/,58.05323,-5.03067,Hut
 Great Orme Exploration Society,http://www.goes.org.uk/,53.3322,-3.85301,Area
 Greater London South Caving Club,,51.45,-0.1,Area
 Greenhow Local History Club,https://greenhow-hill.org.uk/history-2/greenhow-local-history-club/,54.07271,-1.83033,Club
 Greenlaws Mining Project,https://www.facebook.com/groups/205427366316604/,54.72222,-2.17833,Meet
-Gritstone Club,https://www.gritstoneclub.org.uk/,54.56501,-3.06134,Hut
+Gritstone Club*,https://www.gritstoneclub.org.uk/,54.56501,-3.06134,Hut
 Grosvenor Caving Club,https://www.grosvenorcavingclub.co.uk/,,,
 Gwent Caving Club,https://www.gwentcc.co.uk,,,
 Hades Caving Club,,51.58142,-2.57836,Club
 Hainslack Caving Club,,,,
-Hampshire Scout Caving Club,http://hscc.randomstuff.org.uk/,50.85515,-1.50449,Scouts
+#Hampshire Scout Caving Club,http://hscc.randomstuff.org.uk/,50.85515,-1.50449,Scouts
 Hereford Caving Club,http://www.herefordcavingclub.org.uk/,52.06074,-2.70883,Area
 Horseshoe Bat Group,,,,
-Hungarian Caving Club London,https://www.facebook.com/HungarianCavingClubLondon/,,,
+#Hungarian Caving Club London,https://www.facebook.com/HungarianCavingClubLondon/,,,
 Imperial College Caving Club,https://www.union.ic.ac.uk/rcc/caving/,51.50046,-0.17818,Meet
-Jackpot Caving Group,,,,
-Joint Service Mountain Training Wing (Ripon) Caving Club,https://www.army.mod.uk/who-we-are/corps-regiments-and-units/adventurous-training-group-army/,54.1375,-1.52395,Area
+Jackpot Caving Club,,,,
+#Joint Service Mountain Training Wing (Ripon) Caving Club,https://www.army.mod.uk/who-we-are/corps-regiments-and-units/adventurous-training-group-army/,54.1375,-1.52395,Area
 Karst Exploration and Conservation Project,,,,
 Kendal Caving Club,http://kendalcaving.org.uk/,54.32121,-2.754826,Area
 Kent Underground Research Group,http://www.kurg.org.uk/,51.20875,0.79209,Club
-King Edwards School Caving Club,https://kes.org.uk/extra-curricular/clubs-and-societies/,52.45058,-1.92353,Club
+Kent University Caving Club,https://www.kentcaving.co.uk/,51.29673,1.06081,Club
+Keyhole Caving Club,,,,
+King Edwards School Caving Club*,https://kes.org.uk/extra-curricular/clubs-and-societies/,52.45058,-1.92353,Club
+Lancashire Climbing and Caving Club Ltd*,https://thelccc.co.uk,,,
 Lancashire Underground Group,,,,
 Lancaster University Speleological Society,https://lancastercaving.co.uk/,54.01075,-2.7856,Club
 Laxey Mines Research Group,http://www.manxmines.com/,,,
 Leicestershire Scouts Caving Unit,https://www.leicestershirescouts.org.uk/local-scouting/activity-teams/caving/,52.62945,-1.20759,Scouts
 Lincoln Scouts Caving Club,https://www.lincscaving.co.uk/,53.21349,-0.55134,Scouts
 Lindley Educational Trust,https://www.lindleyeducationaltrust.org/activities-caving-mine-exploration/,53.35113,-1.77114,Centre
-Lost World Caving Club,,,,
+#Lost World Caving Club,,,,
+Liverpool University Potholing Club,https://www.facebook.com/groups/LiverpoolPotholing/,53.40478,-3.09713,Club
 Malvern Caving Club,,,,
 Manchester University Speleology Club,https://sites.google.com/site/musccaving/,53.45806,-2.22658,Meet
 Masson Caving Group,https://massoncaving.org.uk/,53.1877,-1.6366,Area
@@ -98,24 +105,27 @@ Montgomeryshire Bat Group,http://www.montgomeryshirebatgroup.org/,,,
 Morley Potholing Club,http://www.morleycavers.org.uk/,53.76081,-1.59096,Meet
 Nenthead Mines Conservation Society,https://www.nentheadmines.com/,54.78676,-2.33767,Club
 Newbury and District Caving Club,http://newburydistrictcavingclub.blogspot.com/,,,
-Nidderdale Caving Club,https://sites.google.com/site/nidderdalecavingclub/,,,
+#Nidderdale Caving Club,https://sites.google.com/site/nidderdalecavingclub/,,,
 North Wales Caving Club,http://www.northwalescavingclub.org.uk/,,,
+North Wales Mine/Cave Explorers,,,,
 North York Moors Caving Club,http://nymcc.org.uk/,,,
 Northern Boggarts,http://northernboggarts.org.uk/,,,
 Northern Pennine Club,https://northernpennineclub.org.uk/,54.11944,-2.42916,Hut
+Nottingham University Cave Club,https://su.nottingham.ac.uk/activities/view/caving,52.93933,-1.20752,Club
 Ogoffydd Jeaunesse,,,,
 Orpheus Caving Club,https://www.orpheuscavingclub.org.uk/,53.16038,-1.77432,Hut
-Over and Under Caving Club,,,,
+#Over and Under Caving Club,,,,
 Oxford University Cave Club,http://www.oucc.org.uk/,51.7541,-1.26316,Club
 Parys Underground Group,http://parysmountain.co.uk/,53.38132,-4.35343,Meet
 PDMHS UEG,https://pdmhs.co.uk/underground-exploration-group-ueg/,53.11987,-1.5632,Club
 Peak Caving Club,https://www.facebook.com/groups/1136385133479026,53.2161,-1.6727,Area
 Pegasus Caving Club,https://www.pegasuscavingclub.org/,52.95773,-1.18054,Meet
-Phoenix Caving Club,,,,
+#Phoenix Caving Club,,,,
 Plymouth Caving Group,http://plymouthcavinggroup.org.uk/,,,
 Plymouth University Adventure & Expo Caving,http://adventureandexpo.com/,50.37533,-4.13873,Club
+Reading University Caving Club,https://www.rucavers.co.uk/,51.44142,-0.94400,Club
 Red Rose Cave & Pothole Club,http://www.rrcpc.org.uk/wordpress/,54.22765,-2.51873,Hut
-Rivendell Caving Club,,,,
+#Rivendell Caving Club,,,,
 Rosevale Historical Mining Society,https://www.rosevalemine.com/,50.18675,-5.56152,Club
 Royal Forest of Dean Caving Club,http://www.rfdcc.org.uk/,51.7755,-2.53589,Meet
 Rubber Duck Caving Club,http://www.rubberduckcavingclub.co.uk/,53.42369,-2.10316,Meet
@@ -124,48 +134,49 @@ Sheffield University Speleologocal Society,http://www.shefcavers.org.uk/,53.3843
 Shepton Mallet Caving Club,https://www.shepton.org.uk/,51.25062,-2.65498,Hut
 Shropshire Caving and Mining Club,http://www.shropshirecmc.org.uk/,52.70865,-2.58836,Meet
 Shropshire Mines Trust Ltd,http://www.shropshiremines.org.uk/,,,
-Shropshire Scouts Caving Team,http://www.shropshirescoutscaving.co.uk/,52.73197,-2.82234,Scouts
+Shropshire Scouts Caving Team*,http://www.shropshirescoutscaving.co.uk/,52.73197,-2.82234,Scouts
 Silence Heritage Site,,,,
 Slough Mountaineering Group,https://sites.google.com/a/slough-mountaineering.org.uk/main,51.55384,-0.61345,Meet
-South East Subterranean Club,http://www.sesczone.co.uk/,51.26595,-0.14521,Club
+South Bristol Speleological Society,https://www.sbss.info,,,
+#South East Subterranean Club,http://www.sesczone.co.uk/,51.26595,-0.14521,Club
 South Ribble Caving Club,,,,
 South Wales Caving Club,https://www.swcc.org.uk/,51.82581,-3.66111,Hut
 South Wales Mines Exploration Group,https://www.facebook.com/SWMines,51.48197,-3.18356,Area
 Southampton University Caving Club,https://caving.susu.org/,50.93419,-1.39568,Club
 Southsea Spelaeological Society,http://southseacavers.org/,,,
 Speleo Rhal Caving Club,,,,
-Speleo Vercors,http://www.speleo-vercors.org/,,,
+#Speleo Vercors,http://www.speleo-vercors.org/,,,
 Spelological Union of Ireland,https://www.caving.ie/,53.10057,-9.07154,Club
 St Just Mines Research Group,,,,
 Stroud Rambling Club,https://stroudramblingclub.org.uk/,51.74439,-2.2172,Area
-Swaledale Outdoor Club,https://www.swaledaleoutdoorclub.org.uk/,54.40233,-1.73913,Hut
-Swansea Speleo Society,https://www.facebook.com/groups/2249027208649631,51.60962,-3.98063,Club
+Surrey Scout Caving CLub*,,,,
+#Swaledale Outdoor Club,https://www.swaledaleoutdoorclub.org.uk/,54.40233,-1.73913,Hut
+#Swansea Speleo Society,https://www.facebook.com/groups/2249027208649631,51.60962,-3.98063,Club
 Swiss Re Trogs,,,,
 Technical Speleological Group,https://tsgcaving.co.uk/,53.34338570983755, -1.7755060982258226,Hut
 The Caving Crew,https://cavingcrew.com/,53.3244691,-1.7443166,Club
-Th'Owd Skool Caving Club,http://thowdskool.www.idnet.com/,,,
-Tower Wood Caving Club,,,,
+#Th'Owd Skool Caving Club,http://thowdskool.www.idnet.com/,,,
+#Tower Wood Caving Club,,,,
 Trident Caving Group,,,,
-University of Bristol Spelæological Society,https://www.ubss.org.uk/,51.45491,-2.61042,Meet
-United Cavers Exploration Team,https://www.ucet.org.uk/,53.25436,-3.20852,Meet
-UK Mine/Cave Diving & Exploration,https://www.ukmine-cave.com/,,,
 UK Mine Exploration,https://www.facebook.com/UKMineExploration/,,,
+UK Mine/Cave Diving & Exploration,https://www.ukmine-cave.com/,,,
+Ulster Speleological Society and Caving Club,https://www.usscc.org,,,
 Underground Overground Club,,,,
-University of Kent Caving Club,https://kentunion.co.uk/activities/caving,51.29585,1.06763,Club
+United Cavers Exploration Team,https://www.ucet.org.uk/,53.25436,-3.20852,Meet
+University of Bristol Spelæological Society,https://www.ubss.org.uk/,51.45491,-2.61042,Meet
 University of Leeds Speleologocal Association,https://ulsa.org.uk/,53.80418,-1.55321,Club
-University of Newcastle Caving Club,https://uncccaving.wixsite.com/uncc,54.9748,-1.61953,Meet
-University of Nottingham Caving Club,http://www.nucc.co.uk/,52.93818,-1.19438,Club
-UWFRA Outdoors Club,https://sites.google.com/site/uwfraoutdoorclub99/,54.0706,-1.99778,Meet
-Vibram Mountaineering Club,http://www.vibram.org.uk/,,,
+#University of Newcastle Caving Club,https://uncccaving.wixsite.com/uncc,54.9748,-1.61953,Meet
+Upper Wharfedale Fell Rescue Outdoors Club,https://sites.google.com/site/uwfraoutdoorclub99/,54.0706,-1.99778,Meet
+Vibram Mountaineering Club*,http://www.vibram.org.uk/,,,
 Wealden Cave & Mine Society,https://wealdencaving.org.uk/website2/,51.8286,-3.6642,Hut
 Welsh Mines Society,http://www.welshmines.org/,,,
 Wessex Cave Club,https://wessex-cave-club.org/,51.25563,-2.66577,Hut
-West Lancashire Scouts Caving Team,https://www.facebook.com/WLSCaving/,53.88962,-2.67145,Scouts
+West Lancashire Scouts Caving Team*,https://www.facebook.com/WLSCaving/,53.88962,-2.67145,Scouts
 West Sussex Caving Club,http://www.westsussexscoutscaving.com/,50.9902,-0.2724,Meet
 Westminster Speleological Group,https://www.wsg.org.uk/,51.75266,-3.54809,Hut
 White Rose Pothole Club,https://www.white-rose.org.uk/,,,
 Wimps and Y-Anchors Caving Club,,,,
-Windermere Caving Club,,54.35833,-2.93611,Area
+#Windermere Caving Club,,54.35833,-2.93611,Area
 Wirksworth Mines Research Group,http://www.wmrg.org.uk/,53.07583,-1.56556,Club
 Yoredale Mine and Cave Group,,54.3056,-2.16667,Area
 York Caving Club,https://yorkcavingclub.org.uk/,53.95833,-1.08027,Area

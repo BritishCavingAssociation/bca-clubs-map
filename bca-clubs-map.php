@@ -84,7 +84,9 @@ function display_clubs_map() {
 
     // Add markers to map
     for (const club in clubs_data) {
-      if (clubs_data[club][4] == "") {
+      if (clubs_data[club][0].startsWith('#')) {
+        continue
+      } else if (clubs_data[club][4] == "") {
         continue;
       } else if (clubs_data[club][4].toLowerCase() == "area") {
         var a = L.circle([parseFloat(clubs_data[club][2]), parseFloat(clubs_data[club][3])], {color: 'orange', fillColor: 'orange', fillOpacity: 0.5, radius: 10000});
