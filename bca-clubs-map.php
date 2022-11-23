@@ -127,7 +127,7 @@ function display_clubs_list() {
   ob_start();
   echo '<ul class="clubsList">';
 
-  $alphabet = str_split('abcdefghijklmnopqrstuvwxyz');
+  $alphabet = str_split('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
   foreach ($alphabet as $a) {
     echo <<<EOD
