@@ -132,7 +132,6 @@ function display_clubs_list() {
   foreach ($alphabet as $a) {
     echo <<<EOD
 <li>
-    ::marker
     <strong>{$a}</strong>
     <ul>
 EOD;
@@ -146,14 +145,13 @@ EOD;
         $club_el = ($club[1] ? "<a href='{$club[1]}'>{$club[0]}</a>" : $club[0]);
         echo <<<EOD
   <li>
-    ::marker
     {$club_el}
   </li>
   EOD;
       }
     }
     echo <<<'EOD'
-    <ul>
+    </ul>
 </li>
 EOD;
   }
