@@ -130,18 +130,28 @@ function display_clubs_list() {
   $alphabet = str_split('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
   foreach ($alphabet as $a) {
+    // prepare first-letter headings
     echo <<<EOD
 <li>
     <strong>{$a}</strong>
     <ul>
 EOD;
+    $_last_club = ''
     foreach ($clubs_data as $club) {
+      // list each club once only
+      if ($club[0] == $_last_club) {
+        continue;
+      } else {
+        $_last_club = $club[0];
+      }
+      // don't list "commented" clubs
       $init = substr($club[0],0,1);
       if ($init == '#' || $init < $a) {
         continue;
       } else if ($init > $a) {
         break;
       } else if ($init == $a) {
+        // prepare club entry
         $club_el = ($club[1] ? "<a href='{$club[1]}'>{$club[0]}</a>" : $club[0]);
         echo <<<EOD
   <li>
