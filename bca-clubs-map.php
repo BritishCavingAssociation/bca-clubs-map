@@ -136,7 +136,7 @@ function display_clubs_list() {
     <strong>{$a}</strong>
     <ul>
 EOD;
-    $_last_club = ''
+    $_last_club = '';
     foreach ($clubs_data as $club) {
       // list each club once only
       if ($club[0] == $_last_club) {
