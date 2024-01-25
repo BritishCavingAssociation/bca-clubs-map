@@ -51,7 +51,7 @@ function display_clubs_map() {
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoiYXJpY29vcGVyZGF2aXMiLCJhIjoiY2p4YnBvc3Z3MDBodjQydGw3cHNmNWxycSJ9.IuUoWUeuAqVz4bSos8gOqA'
+      accessToken: 'pk.eyJ1IjoiYXJpY29vcGVyZGF2aXMiLCJhIjoiY2xydGM4cHJ5MDU0MDJqcGI5ZzQ5a3VudyJ9.IEHn7scX7fL7RpvtSNcmIw'
     }).addTo(mymap);
 
     // Setup icons
