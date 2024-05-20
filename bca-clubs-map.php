@@ -25,7 +25,7 @@ function display_clubs_map()
   echo '<div id="mapid" style="height: 50rem;"></div>';
 
   // Fetch clubs data
-  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv', __FILE__));
+  $clubs_data_str = file_get_contents('https://cdn.jsdelivr.net/gh/BritishCavingAssociation/bca-clubs-map@latest/caving_clubs.csv');
   $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
 
 ?>
@@ -71,7 +71,6 @@ function display_clubs_map()
 
     // Get clubs data
     var clubs_data = <?php echo json_encode($clubs_data); ?>;
-    // console.log(clubs_data);
 
     // Create FeatureGroup for markers and areas
     var circles_lg = L.featureGroup();
@@ -130,7 +129,7 @@ function display_clubs_list()
 {
 
   // Fetch clubs data
-  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv', __FILE__));
+  $clubs_data_str = file_get_contents('https://cdn.jsdelivr.net/gh/BritishCavingAssociation/bca-clubs-map@latest/caving_clubs.csv');
   $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
 
   // Start buffering output
@@ -148,8 +147,12 @@ function display_clubs_list()
 EOD;
     $_last_club = '';
     foreach ($clubs_data as $club) {
+      // skip empty lines
+      if (is_null($club)) {
+        continue;
+      }
       // list each club once only
-      if ($club[0] == $_last_club) {
+      elseif ($club[0] == $_last_club) {
         continue;
       } else {
         $_last_club = $club[0];
