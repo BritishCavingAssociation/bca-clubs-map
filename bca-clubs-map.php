@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: BCA Clubs Map
  * Description: Provides a shortcode that displays BCA clubs on a Leaflet map
@@ -9,38 +10,34 @@
  */
 
 // This should be uncommented in production
-defined( 'ABSPATH' ) or die();
+defined('ABSPATH') or die();
 
 $v = False;
 
 /**
  * Display a leaflet map of the caving clubs (where possible)
  */
-function display_clubs_map() {
+function display_clubs_map()
+{
 
   // Start buffering output
   ob_start();
   echo '<div id="mapid" style="height: 50rem;"></div>';
 
   // Fetch clubs data
-  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv',__FILE__));
+  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv', __FILE__));
   $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
 
-  ?>
+?>
 
   <!-- Load leaflet style -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 
   <!-- Load leaflet script -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
   <!-- Build our leaflet map -->
   <script>
-
     // Setup base map
     var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -56,11 +53,11 @@ function display_clubs_map() {
 
     // Setup icons
     const icons = {
-      centre : null,
-      club : null,
-      hut : null,
+      centre: null,
+      club: null,
+      hut: null,
       meet: null,
-      scouts : null
+      scouts: null
     };
 
     for (const icon in icons) {
@@ -68,7 +65,7 @@ function display_clubs_map() {
         iconSize: [32, 32],
         iconAnchor: [16, 16],
         popupAnchor: [0, -16],
-        iconUrl:  '<?php echo plugins_url('/images/',__FILE__); ?>' + icon + '.png'
+        iconUrl: '<?php echo plugins_url('/images/', __FILE__); ?>' + icon + '.png'
       });
     };
 
@@ -82,30 +79,42 @@ function display_clubs_map() {
 
     // Add markers to map
     for (const club in clubs_data) {
-      if (clubs_data[club][0].startsWith('#')) {
-        continue
-      } else if (clubs_data[club][4] == "") {
+      try {
+        if ((clubs_data[club][0] === null) || clubs_data[club][0].startsWith('#')) {
+          continue
+        } else if (clubs_data[club][4] == "") {
+          continue;
+        } else if (clubs_data[club][4].toLowerCase() == "area") {
+          var a = L.circle([parseFloat(clubs_data[club][2]), parseFloat(clubs_data[club][3])], {
+            color: 'orange',
+            fillColor: 'orange',
+            fillOpacity: 0.5,
+            radius: 10000
+          });
+          a.addTo(circles_lg);
+        } else {
+          var a = L.marker([parseFloat(clubs_data[club][2]), parseFloat(clubs_data[club][3])], {
+            icon: icons[clubs_data[club][4].toLowerCase()]
+          });
+          a.addTo(markers_lg);
+        };
+        var popup = "<b>" + clubs_data[club][0] + "</b>";
+        if (clubs_data[club][1] != "") {
+          popup += "<br><a href=" + clubs_data[club][1] + ">" + clubs_data[club][1] + "</a>";
+        }
+        a.bindPopup(popup);
+      } catch (error) {
+        console.log(error);
         continue;
-      } else if (clubs_data[club][4].toLowerCase() == "area") {
-        var a = L.circle([parseFloat(clubs_data[club][2]), parseFloat(clubs_data[club][3])], {color: 'orange', fillColor: 'orange', fillOpacity: 0.5, radius: 10000});
-        a.addTo(circles_lg);
-      } else {
-        var a = L.marker([parseFloat(clubs_data[club][2]), parseFloat(clubs_data[club][3])], {icon: icons[clubs_data[club][4].toLowerCase()]});
-        a.addTo(markers_lg);
-      };
-      var popup = "<b>"+clubs_data[club][0]+"</b>";
-      if (clubs_data[club][1] != "") {
-        popup += "<br><a href="+clubs_data[club][1]+">"+clubs_data[club][1]+"</a>";
       }
-      a.bindPopup(popup);
     };
+
     circles_lg.addTo(mymap);
     markers_lg.addTo(mymap);
     mymap.fitBounds(markers_lg.getBounds());
-
   </script>
 
-  <?php
+<?php
 
   // End buffering output and return
   $output = ob_get_contents();
@@ -117,10 +126,11 @@ add_shortcode('clubs_map', 'display_clubs_map');
 /**
  * Display bulleted list of clubs
  */
-function display_clubs_list() {
+function display_clubs_list()
+{
 
   // Fetch clubs data
-  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv',__FILE__));
+  $clubs_data_str = file_get_contents(plugins_url('caving_clubs.csv', __FILE__));
   $clubs_data = array_slice(array_map('str_getcsv', explode("\n", $clubs_data_str)), 1, -1);
 
   // Start buffering output
@@ -145,7 +155,7 @@ EOD;
         $_last_club = $club[0];
       }
       // don't list "commented" clubs
-      $init = substr($club[0],0,1);
+      $init = substr($club[0], 0, 1);
       if ($init == '#' || $init < $a) {
         continue;
       } else if ($init > $a) {
@@ -166,7 +176,7 @@ EOD;
 EOD;
   }
 
-  echo '</ul>'; 
+  echo '</ul>';
 
   // End buffering output and return
   $output = ob_get_contents();
